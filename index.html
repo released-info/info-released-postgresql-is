@@ -1,0 +1,304 @@
+<!--
+
+  Fields to modify:
+
+  _PAGE_TITLE_: eg. "Is Java released?"
+  _PAGE_IMAGE_: src to image
+  _PAGE_DESCRIPTION_: short page info
+  _PAGE_DESCRIPTION_1
+  _PAGE_DESCRIPTION_2
+  _PAGE_URL_: this page url (eg. https://is.java.released)
+  _IMAGE_ALT_: description for each image
+  _PAGE_IMAGE_ALTERNATE_: src to image
+  _TWITTER_USER_VIA_: your twitter account (shown as via while sharing), can be empty
+
+  _DAYS_TO_RELEASE_: must be filled for confetti or counter working plugins
+    counter: insert number > 0
+    it's out: insert 0
+    information: insert -1
+
+  features section:
+    _FEATURES_TITLE_
+    _FEATURE_TEXT_
+
+  images section:
+    _POSTS_TITLE_
+    _ITERATOR_HYPERLINK_: link to page
+    _ITERATOR_IMAGE_SRC_: src to image, images adjust, but keeping similar ratio is good
+    _ITERATOR_IMAGE_TEXT_: text displayed on the image, try to keep it max 2 lines long
+
+  _SUBSCRIPTION_INFO_
+
+-------------------------------------------------------------------
+
+  get technology image from /assets/img/technologies/java, etc...
+  it shouldn't decrease performance
+
+
+  alt prop in <img object is important for SEO, keep it relevant and specific:
+  example: alt="two cute ginger kittens sleeping with balls of wool"
+
+  when you choose color, use web color palletes and remember about contrast
+  https://coolors.co/generate
+  https://webaim.org/resources/contrastchecker/
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./theme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <title>Is PostgreSQL 14 Released?</title>
+  <link rel="icon" href="https://released.info/assets/img/technologies/postgresql/postgresql-icon.png" type="image/svg+xml">
+  <meta name="description" content="Is PostgreSQL 14 Released?">
+
+  <!-- facebook -->
+  <meta property="og:url" content="_PAGE_URL_" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="_PAGE_TITLE_" />
+  <meta property="og:description" content="_PAGE_DESCRIPTION_" />
+  <meta property="og:image" content="_PAGE_IMAGE_" />
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="_TWITTER_USER_VIA_" />
+  <meta name="twitter:title" content="_PAGE_TITLE_" />
+  <meta name="twitter:description" content="_PAGE_DESCRIPTION_" />
+  <meta name="twitter:image" content="_PAGE_IMAGE_" />
+
+  <meta name="url" content="_PAGE_URL_" />
+</head>
+
+<body>
+
+<input id="released-days" type="hidden" value="-1" />
+
+<main role="main">
+  <section class="released-info">
+    <div class="container-lg">
+      <ul class="social-links">
+        <li>
+          <a class="share-linkedin" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="share-facebook" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="share-twitter" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <h2>Is PostgreSQL 14 Released?</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="logo">
+            <img src="https://released.info/assets/img/technologies/postgresql/PostgreSQL-logo.png" alt="PostgreSQL logo" />
+          </div>
+
+          <!-- CHOOSE ONE OF BELOW SECTIONS HERE -->
+
+          
+          
+          <span>
+            <div class="white-box" id="not-yet">
+              Not Yet
+            </div>
+          </span>
+          
+
+          <!-- END -->
+
+        </div>
+      </div>
+      <span>
+        <h3>PostgreSQL is planned to be Released in the third quarter of 2021</h3>
+      </span>
+      
+
+      <div class="text-center">
+        <a class="share-twitter" target="_blank">
+          <i class="bi bi-twitter"></i>
+          Tweet this
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container-lg">
+      <h2>Meet PostgreSQL 14</h2>
+      <div class="row mb-5">
+        <div class="col-md-6">
+
+          <ul>
+            <li>Support for multirange types added</li>
+          </ul>
+
+          <ul>
+            <li>'bottom-up deletion' for btree indexes</li>
+          </ul>
+
+          <ul>
+            <li>Primary keys and unique constraints added to system catalogue tables</li>
+          </ul>
+
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Table truncation API added</li>
+          </ul>
+          <ul>
+            <li>Primary keys and unique constraints added to system catalogue tables</li>
+          </ul>
+          <ul>
+            <li>Jsonb subscripting support added</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">
+        <a target="_blank" href="https://pgpedia.info/postgresql-versions/postgresql-14.html" class="btn btn-primary btn-lg">Read more</a>
+      </div>
+    </div>
+    <div class="logo-container">
+      <span>
+        <img src="https://released.info/assets/img/technologies/postgresql/PostgreSQL-logo2.png" alt="PostgreSQL logo" />
+      </span>
+    </div>
+  </section>
+
+  <section class="posts-section">
+    <div class="container-lg">
+      <h2>Read all about Java</h2>
+      <div class="row">
+
+        <!-- repeat below container for each image: -->
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/JAVA-9-0-13-0-New-Features-ebook/dp/B07XY9WQ2T">
+              <img src="https://released.info/assets/img/technologies/java/book-java-9-to-13.jpg" alt="Book: Java 9 to 13">
+              <span>
+                Java 9 to 13
+              </span>
+            </a>
+          </div>
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/Java-11-Quick-Start-developments-ebook/dp/B07DT9Z5QK">
+              <img src="https://released.info/assets/img/technologies/java/book-java-11-and-12-new-features.jpg" alt="Book: Java 11 and 12 new features">
+              <span>
+                Java 11 and 12 new features
+              </span>
+            </a>
+          </div>
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/Java-13-Revealed-Adoption-Migration-ebook/dp/B07ZMW97PD">
+              <img src="https://released.info/assets/img/technologies/java/book-java-13-revealed.jpg" alt="Book: Java 13 revealed">
+              <span>
+                Java 13 revealed
+              </span>
+            </a>
+          </div>
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/More-Java-17-Depth-Exploration/dp/1484271343">
+              <img src="https://released.info/assets/img/technologies/java/book-more-java-17.jpg" alt="Book: More java 17">
+              <span>
+                More java 17
+              </span>
+            </a>
+          </div>
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997">
+              <img src="https://released.info/assets/img/technologies/java/book-effective-java-3.jpg" alt="Book: Effective Java 3rd Edition">
+              <span>
+                Effective Java 3rd Edition
+              </span>
+            </a>
+          </div>
+        
+          <div class="col-sm-4">
+            <a target="_blank" href="https://www.amazon.com/Modern-Java-Action-functional-programming/dp/1617293563">
+              <img src="https://released.info/assets/img/technologies/java/book-modern-java-in-action.jpg" alt="Book: Modern Java in Action">
+              <span>
+                Modern Java in Action
+              </span>
+            </a>
+          </div>
+        
+
+        <!-- repeat end -->
+
+      </div>
+      <div class="news">
+        <div>_SUBSCRIPTION_INFO_</div>
+        <div>Subscribe to the newsletter:</div>
+        <div class="form">
+          <div id="input-container">
+            <input value="" id="subscribe-input" type="email" class="form-control" placeholder="Your email">
+            <button disabled id="subscribe-button" type="button" class="btn btn-warning">Submit</button>
+          </div>
+          <div id="subscription-success">
+            Thanks!
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<!-- paths should be set to assets in main domain folder -->
+<footer class="footer-dark">
+  <div class="container-lg">
+    <ul>
+      <li>
+        <a href="../../index.html">
+          released.info
+        </a>
+      </li>
+      <li>
+        <a href="../../terms.html">
+          Terms of use
+        </a>
+      </li>
+      <li>
+        <a href="../../privacy.html">
+          Privacy policy
+        </a>
+      </li>
+      <li>
+        <a href="../../api.html">
+          API
+        </a>
+      </li>
+      <li>
+        <a href="../../contact.html">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- paths should be set to assets in main domain folder -->
+<script src="https://released.info/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="https://released.info/assets/js/vendor/jquery.confetti.js"></script>
+<script src="https://released.info/assets/js/vendor/odometer.min.js"></script>
+<script src="https://released.info/assets/js/technology.js"></script>
+</body>
+
+</html>
