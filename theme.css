@@ -27,3 +27,10 @@
 .btn-primary {
   color: #f2f2f2 !important;
 }
+
+/* IMAGE */
+.features-section .logo-container {
+  height: 15vw;
+  max-height: 200px;
+  min-height: 80px;
+}
