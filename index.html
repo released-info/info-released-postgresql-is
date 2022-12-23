@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1671816348-->
+<!--timestamp=1671818204-->
 
 <head>
   <meta charset="UTF-8">
@@ -123,19 +123,19 @@
 
             <ul>
               <li>
-                syntax FOR ALL TABLES IN SCHEMA
+                support for binary, octal and hexadecimal integer literals added
               </li>
             </ul>
 
             <ul>
               <li>
-                parameter two_phase
+                FROM clause subquery aliases no longer required (
               </li>
             </ul>
 
             <ul>
               <li>
-                syntax FOR ALL TABLES IN SCHEMA
+                SYSTEM_USER reserved keyword now supported
               </li>
             </ul>
 
@@ -143,23 +143,23 @@
           <div class="col-md-5">
             <ul>
               <li>
-                foreign key ON DELETE SET ... actions can be provided with an explicit column list
+                column set_option added
               </li>
             </ul>
             <ul>
               <li>
-                parallel DISTINCT support
+                added pg_input_error_message()
               </li>
             </ul>
             <ul>
               <li>
-                pg_stat_subscription_workers added
+                GUC_NO_RESET flag added 
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://pgpedia.info/postgresql-versions/postgresql-15.html" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://pgpedia.info/postgresql-versions/postgresql-16.html" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
@@ -298,7 +298,11 @@
     <section class="about-section">
       <div class="container-lg">
         <div>
-  <h2>About PostgreSQL</h2>
+  <h1>About PostgreSQL</h1>
+  You can check which version of PostgreSQL database server you are using by running the following command in your terminal:
+  "SELECT version();"
+  This will return a string containing the version of PostgreSQL you are running.
+  <h1>About PostgreSQL</h1>
   PostgreSQL, also known as Postgres, is a free and open-source relational database management system (RDBMS)
   PostgreSQL is a very interesting example of an SQL-based relational database management system.
   This software was released by the highly prestigious and respected UCBerkeley in California.
